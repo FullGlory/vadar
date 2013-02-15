@@ -1,0 +1,196 @@
+﻿html,
+body {
+  height: 100%;
+  background: #111;
+}
+ 
+#builds {
+  width:100%; 
+  height: 100%;
+  border: 1px solid #666;
+  padding: 5px;
+  margin-bottom: 20px;
+  background: #1F1E1D;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+.project {
+  margin: 5px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #888;
+  color: #222;
+  -webkit-border-top-right-radius: 2.2em;
+      -moz-border-radius-topright: 2.2em;
+          border-top-right-radius: 2.2em;
+}
+
+.project * {
+  position: absolute;
+  margin: 0;
+}
+
+.variable-sizes .project.height1 {
+	height: 210px;
+}
+
+.variable-sizes .project.height2 {
+	height: 430px;
+}
+
+.variable-sizes .project.height3 {
+	height: 650px;
+}
+
+.variable-sizes .project.width1 {
+	width: 210px;
+}
+
+.variable-sizes .project.width2 {
+	width: 430px;
+}
+
+.variable-sizes .project.width3 {
+	width: 650px;
+}
+
+.variable-sizes .project.fail {
+	width: 650px !important;
+	height: 650px !important;
+}
+
+.project.fail         { background: #F00; background: hsl(   0, 100%, 50%); }
+.project.success	  { background: #F80; background: hsl(  144, 100%, 37%); }
+.project.warning	  { background: #F80; background: hsl(  36, 100%, 50%); }
+
+.project .symbol {
+  left: 0.2em;
+  top: 0.4em;
+  font-size: 3.6em;
+  line-height: 1.0em;
+  color: #FFF;
+}
+
+.variable-sizes .width1 .symbol {
+  left : 0.2em;
+  top: 0.7em;
+}
+
+.variable-sizes .width2 .symbol {
+  font-size: 7.4em;
+}
+
+.variable-sizes .width3 .symbol {
+  font-size: 10.8em;
+}
+
+.variable-sizes .fail .symbol 
+{
+  left: 0.2em;
+  top: 0.4em;
+  font-size: 10.8em;
+}
+
+.project .name {
+  left : 0.4em;
+  top: 2.4em;
+  font-size: 2.00em;
+}
+
+.variable-sizes .width1 .name {
+  left : 0.4em;
+  top: 2.9em;
+}
+
+.variable-sizes .width2 .name {
+  left : 0.5em;
+  top: 2.9em;
+  font-size: 3.40em;
+}
+
+.variable-sizes .width3 .name {
+  left : 0.3em;
+  top: 2.4em;
+  font-size: 5.80em;
+}
+
+.variable-sizes .fail .name {
+  left : 0.3em;
+  top: 2.4em;
+  font-size: 5.80em;
+}
+
+.project .number {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: hsla(0,0%,0%,.5);
+  right: 0.5em;
+  top: 0.5em;
+}
+
+.variable-sizes .width2 .number {
+  font-size: 2.25em;
+}
+
+.variable-sizes .width3 .number {
+  font-size: 3.25em;
+}
+
+.variable-sizes .fail .number {
+  font-size: 3.25em;
+}
+
+.project .image {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 35%;
+}
